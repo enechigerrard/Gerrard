@@ -1,0 +1,13 @@
+<div class="border-bottom row" style="margin-bottom:16px;">
+    <div class='col-9'>
+        <h3 style="color:rgb(120,120,120); margin-bottom:4px;">{{dept['id'].upper()}}</h3>
+        <div>
+        {% if "salary" in dept %}
+            <b>Salary:</b> {{dept['salary']}}
+        {% endif %}
+        </div>
+        <div><b>Worktype:</b>{{dept['work_type'].upper()}}</div>
+        <div><b>Location:</b>{{dept['branch'].title()}}</div>
+    </div>
+    <div class="col-2"><button type="button" class="btn btn-primary">Apply</button></div>   
+</div>
